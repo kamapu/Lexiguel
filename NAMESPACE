@@ -1,0 +1,25 @@
+## Import packages
+import(methods)
+
+## Export regular function names
+export(
+    error_bars,
+    shadows,
+    shadowplot,
+    strp,
+    stringplot
+)
+
+# S3 methods for shadowplot
+S3method(shadowplot, default)
+S3method(shadowplot, factor)
+S3method(shadowplot, integer)
+S3method(shadowplot, data.frame)
+S3method(shadowplot, formula)
+
+# S3 methods for stringplot
+S3method(stringplot, default)
+S3method(stringplot, factor)
+S3method(stringplot, integer)
+S3method(stringplot, data.frame)
+S3method(stringplot, formula)
