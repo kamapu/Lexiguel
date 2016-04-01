@@ -11,7 +11,7 @@ countries (localities) and considering 4 land use types (unbalanced sampling).
 \details{
 The data frame contains following variables (columns):
 \describe{
-	\item{UseunitID}{Character vector with identifyer for each assessment unit.}
+	\item{UseunitID}{Character vector with identifier for each assessment unit.}
 	\item{Country}{Country of sampling.}
 	\item{Locality}{Locality of sampling (one per country).}
 	\item{Landuse}{Type of land use.}

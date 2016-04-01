@@ -6,6 +6,7 @@ export(
     error_bars,
     shadows,
     shadowplot,
+    sloss,
     strp,
     stringplot
 )
@@ -23,3 +24,6 @@ S3method(stringplot, factor)
 S3method(stringplot, integer)
 S3method(stringplot, data.frame)
 S3method(stringplot, formula)
+
+# S3 methods for SLOSS
+S3method(plot, SLOSS)

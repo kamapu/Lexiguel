@@ -31,6 +31,6 @@ sloss <- function(table, env=data.frame(), area) {
     SLOSS$Index <- with(SLOSS$SL, curve_area(area,
                     species))/with(SLOSS$LS, curve_area(area, species))
     # Final object
-    class(SLOSS)[2] <- "SLOSS"
+    class(SLOSS) <- c("SLOSS","list")
     return(SLOSS)
 }
