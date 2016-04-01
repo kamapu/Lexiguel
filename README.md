@@ -45,7 +45,7 @@ example(plot.SLOSS)
 #> p.SLOS> plot(rc_curves, show.legend=TRUE)
 ```
 
-![plot of chunk unnamed-chunk-3](README-unnamed-chunk-3-1.png)
+![plot of chunk sloss_curve](README-sloss_curve-1.png)
 
 
 
