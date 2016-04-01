@@ -28,25 +28,16 @@ install_github("kamapu/Lexiguel")
 
 
 ```r
+## Load gaps from the Robinson Crusoe Island
 library(Lexiguel)
-example(plot.SLOSS)
-#> 
-#> p.SLOS> ## Load gaps from the Robinson Crusoe Island
-#> p.SLOS> library(Lexiguel)
-#> 
-#> p.SLOS> data(rc_gaps)
-#> 
-#> p.SLOS> data(rc_gaps.env)
-#> 
-#> p.SLOS> ## Calculation of curves
-#> p.SLOS> rc_curves <- sloss(rc_gaps, rc_gaps.env, area)
-#> 
-#> p.SLOS> ## Plot the curves
-#> p.SLOS> plot(rc_curves, show.legend=TRUE)
+data(rc_gaps)
+data(rc_gaps.env)
+
+## Calculation of curves
+rc_curves <- sloss(rc_gaps, rc_gaps.env, area)
+
+## Plot the curves
+plot(rc_curves, show.legend=TRUE)
 ```
 
-![plot of chunk sloss_curve](README-sloss_curve-1.png)
-
-
-
-
+![plot of chunk figures/sloss_curve](README-figures/sloss_curve-1.png)
