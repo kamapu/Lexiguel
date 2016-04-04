@@ -19,7 +19,8 @@ The data is contained in two separated objects.
 The vegetation table (\code{rc_gaps}) is formatted as a presence/absence matrix
 with the gaps (units) as rows and the species as columns.
 The data frame \code{rc_gaps.env} contains information about the surface size of
-the gaps (in m^2), the type and the size rank (see \bold{Vargase et al. 2013}).
+the gaps (in squared metres), the type and the size rank (see
+\bold{Vargas et al. 2013}).
 }
 \references{
 \bold{Vargas RI, Gärtner S, Alvarez M, Hagen E, Reif A (2013).} Does restoration
