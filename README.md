@@ -40,12 +40,12 @@ data(rc_gaps.env)
 
 ## Calculation of curves
 rc_curves <- sloss(rc_gaps, rc_gaps.env, area)
-#> Error in eval(expr, envir, enclos): could not find function "sloss"
 
 ## Plot the curves
 plot(rc_curves, show.legend=TRUE)
-#> Error in plot(rc_curves, show.legend = TRUE): object 'rc_curves' not found
 ```
+
+![plot of chunk figures/sloss_curve](README-figures/sloss_curve-1.png)
 
 ### Shadowplot and stringplot
 The functions `shadowplot` and `stringplot` are alternatives to `boxplot` and
