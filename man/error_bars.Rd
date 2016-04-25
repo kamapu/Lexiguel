@@ -28,6 +28,9 @@ This function is using \code{\link{points}} to plot the tendency values and
 It is also possible to draw just error bars using the option
 \code{show.tendency=FALSE}.
 }
+\author{
+Miguel Alvarez (\email{malvarez@uni-bonn.de}).
+}
 \examples{
 library(Lexiguel)
 data(PlantGrowth)

@@ -39,7 +39,7 @@ including some alternatives for the layout.
 \item{...}{Further arguments passed to \code{\link{plot}}.}
 }
 \author{
-Miguel Alvarez, \email{malvarez@uni-bonn.de}
+Miguel Alvarez (\email{malvarez@uni-bonn.de}).
 }
 \seealso{
 \code{\link{sloss}}

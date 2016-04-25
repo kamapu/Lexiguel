@@ -38,7 +38,7 @@ off-site Faktoren der hydrologischen Feuchtgebietsdegradation in Ostafrika.
 \bold{Beuel S, Alvarez M, Amler E, Behn K, Kotze D, Kreye C, Leemhuis C,
 Wagner K, Willy DK, Ziegler S, Becker M (2016).} A rapid assessment of
 anthropogenic disturbances in East African wetlands.
-\emph{Ecological Indicators} (submitted).
+\emph{Ecological Indicators} 67: 684--692.
 }
 \examples{
 library(Lexiguel)

@@ -5,7 +5,7 @@
 
 # Lexiguel
 A mingle-mangle of functions for R, most of them related to publications done by
-maintainer.
+the maintainer.
 Thus would you like to implement some plots or analyses done in one of my
 publications?
 Then, `Lexiguel` is the proper place to exchange requests and answers.

@@ -54,13 +54,13 @@ internally.
 Alternatively \code{\link{shadowplot}} or a combination of both can be used.
 }
 \author{
-Miguel Alvarez, \email{malvarez@uni-bonn.de}
+Miguel Alvarez (\email{malvarez@uni-bonn.de}).
 }
 \references{
 \bold{Beuel S, Alvarez M, Amler E, Behn K, Kotze D, Kreye C, Leemhuis C,
 Wagner K, Willy DK, Ziegler S, Becker M (2016).} A rapid assessment of
 anthropogenic disturbances in East African wetlands.
-\emph{Ecological Indicators} (submitted).
+\emph{Ecological Indicators} 67: 684--692.
 }
 \seealso{
 \code{\link{strp}}, \code{\link{shadowplot}}.

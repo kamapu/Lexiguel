@@ -12,7 +12,7 @@ installation, you may first install the package \code{devtools} and
 dependencies, and then follow the provided example.
 }
 \author{
-Miguel Alvarez, \email{malvarez@uni-bonn.de}
+Miguel Alvarez (\email{malvarez@uni-bonn.de}).
 }
 \examples{
 \dontrun{

@@ -26,7 +26,7 @@ This plot function is offered as an alternative to \code{\link{boxplot}} for
 categorical and ordinal data and should be interpreted as an histogram.
 }
 \author{
-Miguel Alvarez, \email{malvarez@uni-bonn.de}
+Miguel Alvarez (\email{malvarez@uni-bonn.de}).
 }
 \seealso{
 \code{\link{stringplot}}, \code{\link{error_bars}}.

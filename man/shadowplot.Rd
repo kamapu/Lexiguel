@@ -57,7 +57,7 @@ internally.
 Alternatively \code{\link{stringplot}} or a combination of both can be used.
 }
 \author{
-Miguel Alvarez, \email{malvarez@uni-bonn.de}
+Miguel Alvarez (\email{malvarez@uni-bonn.de}).
 }
 \seealso{
 \code{\link{shadows}}, \code{\link{stringplot}}.

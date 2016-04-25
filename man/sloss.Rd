@@ -40,7 +40,7 @@ An object of class \code{'SLOSS'}, which is a list with following elements:
 }
 }
 \author{
-Miguel Alvarez, \email{malvarez@uni-bonn.de}
+Miguel Alvarez (\email{malvarez@uni-bonn.de}).
 }
 \seealso{
 \code{\link{plot.SLOSS}}
