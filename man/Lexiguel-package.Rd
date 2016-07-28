@@ -1,8 +1,9 @@
 % multi-purpose template
 \name{Lexiguel-package}
 \docType{package}
-
 \alias{Lexiguel-package}
+\alias{Lexiguel}
+
 \title{A Mingle-Mangle of Functions for R.}
 \description{
 Most of the functions included here are related with published works and
