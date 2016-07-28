@@ -36,11 +36,11 @@ stringplot.integer <- function(x, lwd=1, maxwidth=1, col="black", at, bty="n",
 	}
 }
 
-# The same for factor
-stringplot.factor <- function(x, ...) {
-	x <- as.integer(x)
-	stringplot(x, ...)
-}
+## # The same for factor
+## stringplot.factor <- function(x, ...) {
+##     x <- as.integer(paste(x))
+##     stringplot(x, ...)
+## }
 
 # method for data frame
 stringplot.data.frame <- function(x=data.frame(), what, by, at, col, lwd=2,

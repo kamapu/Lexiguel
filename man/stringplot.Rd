@@ -10,15 +10,13 @@
 \description{
 Alternative plot to display distribution of categorical variables.
 The function \code{stringplot} produces a plot of frequencies for classes of
-categorical variables and is similar to \dQuote{box-and-whisker plots}
-(\code{\link{boxplot}}) but also to \dQuote{histograms} (\code{\link{hist}}).
+categorical variables and is similar to \dQuote{box-and-whisker plots} but it
+may be interpreted as histograms.
 }
 \usage{
 stringplot(x, ...)
 
 \method{stringplot}{default}(x, ...)
-
-\method{stringplot}{factor}(x, ...)
 
 \method{stringplot}{integer}(x, lwd=1, maxwidth=1, col="black", at, bty="n",
 	xaxt="n", ylim, xlab="", ylab="classes", ...)
@@ -29,7 +27,7 @@ stringplot(x, ...)
 \method{stringplot}{formula}(formula, data=data.frame(), ...)
 }
 \arguments{
-    \item{x}{Either a factor, an integer vector or a data frame.}
+    \item{x}{Either an integer vector or a data frame.}
     \item{data}{Data frame containing the vectors to be plotted.}
     \item{formula}{A formula for plotting.}
     \item{lwd}{Line width for strings (see \code{\link{par}}).}
@@ -47,7 +45,7 @@ stringplot(x, ...)
 }
 \details{
 This plot function is offered as an alternative to \code{\link{boxplot}} for
-categorical and ordinal data and single string piles should be interpreted as
+categorical (ordinal) variables and single string piles should be interpreted as
 histograms.
 To plot single string piles the function \code{\link{strp}} is called
 internally.

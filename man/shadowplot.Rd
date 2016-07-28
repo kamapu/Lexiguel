@@ -1,7 +1,6 @@
 \name{shadowplot}
 \alias{shadowplot}
 \alias{shadowplot.default}
-\alias{shadowplot.factor}
 \alias{shadowplot.integer}
 \alias{shadowplot.data.frame}
 \alias{shadowplot.formula}
@@ -18,8 +17,6 @@ shadowplot(x, ...)
 
 \method{shadowplot}{default}(x, ...)
 
-\method{shadowplot}{factor}(x, ...)
-
 \method{shadowplot}{integer}(x, start, end, at, maxwidth=1, col="grey",
 	border=NA, bty="n", xaxt="n", ylim, xlab="", ylab="classes", ...)
 
@@ -30,7 +27,7 @@ shadowplot(x, ...)
 \method{shadowplot}{formula}(formula, data=data.frame(), ...)
 }
 \arguments{
-    \item{x}{Either a factor, an integer vector or a data frame.}
+    \item{x}{Either an integer vector or a data frame.}
     \item{start}{Lowest possible value as integer.}
 	\item{end}{Highest possible value as integer.}
 	\item{at}{Position of the shadow in the x-axis of the plot.}

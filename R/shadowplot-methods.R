@@ -62,11 +62,11 @@ shadowplot.integer <- function(x, start, end, at, maxwidth=1, col="grey",
     }
 }
 
-# The same for factor
-shadowplot.factor <- function(x, ...) {
-    x <- as.integer(x)
-    shadowplot(x, ...)
-}
+## # The same for factor
+## shadowplot.factor <- function(x, ...) {
+##     x <- as.integer(paste(x))
+##     shadowplot(x, ...)
+## }
 
 # method for data frame
 shadowplot.data.frame <- function(x=data.frame(), what, by, start, end, at,
