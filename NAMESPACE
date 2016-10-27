@@ -8,6 +8,7 @@ importFrom("stats", "terms")
 
 ## Export regular function names
 export(
+	curve_area,
     error_bars,
     gap_id,
     gap_fill,

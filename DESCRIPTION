@@ -1,5 +1,5 @@
 Package: Lexiguel
-Version: 0.0.0.9008
+Version: 0.0.0.9009
 Date: 2016-10-27
 Title: Miscellaneous Functions
 Authors@R: person("Miguel", "Alvarez", email="malvarez@uni-bonn.de",

@@ -35,6 +35,8 @@ is the vector \code{x} with NAs replaced by custom values.
 Miguel Alvarez (\email{malvarez@uni-bonn.de}).
 }
 \examples{
+library(Lexiguel)
+
 ## A vector with two gaps
 A <- c(1:5, NA, NA, 7:10, NA, NA, NA, 16:20)
 A

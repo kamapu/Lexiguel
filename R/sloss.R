@@ -4,9 +4,9 @@
 ################################################################################
 
 # Internal function calculating area below the curve (trapezoids)
-curve_area <- function(x, y) {
-    D1 <- c(0, diff(x))
-    D2 <- c(0, diff(y))
+curve_area <- function(x, y, bottom=0) {
+    D1 <- c(bottom, diff(x))
+    D2 <- c(bottom, diff(y))
     Area <- sum(D1*y + D1*D2/2)
     return(Area)
 }
