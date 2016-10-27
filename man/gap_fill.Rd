@@ -1,0 +1,52 @@
+\name{gap_fill}
+\alias{gap_id}
+\alias{gap_fill}
+
+\title{Identifying and filling gaps}
+\description{
+These functions are able to identify gaps in vectors (contiguous NA values) and
+fill them with custom values.
+}
+\usage{
+gap_id(x)
+
+gap_fill(x, gap, method="linear")
+}
+\arguments{
+	\item{x}{A vector where gaps have to be detected.}
+	\item{gap}{An integer vector with the identity of gaps (see details).}
+	\item{method}{Method used to fill gaps.}
+}
+\details{
+The function \code{gap_id} identify contiguous NA values and assign to them an
+integer as identifier.
+The 0 is indicated for values outside of the gaps.
+
+For the function \code{gap_fill} only the linear method is yet implemented
+(linear interpolation between the values neighbouring the gap).
+The argument \code{gap} in this function can be the output of \code{gap_id}.
+}
+
+\value{
+An integer vector with the IDs of gaps for \code{gap_id}, while \code{gap_fill}
+is the vector \code{x} with NAs replaced by custom values.
+}
+\author{
+Miguel Alvarez (\email{malvarez@uni-bonn.de}).
+}
+\examples{
+## A vector with two gaps
+A <- c(1:5, NA, NA, 7:10, NA, NA, NA, 16:20)
+A
+
+## Identification of gaps
+B <- gap_id(A)
+B
+
+## Linear interpolation in gaps
+A_filled <- gap_fill(A, B)
+
+par(mfrow=c(2,1))
+plot(1:length(A), A, type="l")
+plot(1:length(A_filled), A_filled, type="l")
+}

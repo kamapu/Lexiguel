@@ -9,6 +9,8 @@ importFrom("stats", "terms")
 ## Export regular function names
 export(
     error_bars,
+    gap_id,
+    gap_fill,
     shadows,
     shadowplot,
     sloss,
@@ -30,6 +32,3 @@ S3method(stringplot, formula)
 
 # S3 methods for SLOSS
 S3method(plot, SLOSS)
-
-
-
