@@ -12,6 +12,7 @@ export(
     error_bars,
     gap_id,
     gap_fill,
+    get_ring,
     shadows,
     shadowplot,
     sloss,
