@@ -48,9 +48,10 @@ shadowplot.default <- function(x, ...)
     cat("The class of 'x' does not match any method for 'shadowplot'", "\n")
 
 # the high level function for a single stringplot (low level with at argument)
-shadowplot.integer <- function(x, start, end, at, maxwidth=1, col="grey",
+shadowplot.numeric <- function(x, start, end, at, maxwidth=1, col="grey",
         border=NA, bty="n", xaxt="n", ylim, xlab="", ylab="classes", ...) {
-    if(missing(start)) start <- min(x)
+    if(!is.integer(x)) x <- as.integer(x)
+	if(missing(start)) start <- min(x)
     if(missing(end)) end <- max(x)
     if(!missing(at)) {
         shadows(x, start, end, at, maxwidth, col, border)

@@ -1,7 +1,7 @@
 \name{shadowplot}
 \alias{shadowplot}
 \alias{shadowplot.default}
-\alias{shadowplot.integer}
+\alias{shadowplot.numeric}
 \alias{shadowplot.data.frame}
 \alias{shadowplot.formula}
 
@@ -17,7 +17,7 @@ shadowplot(x, ...)
 
 \method{shadowplot}{default}(x, ...)
 
-\method{shadowplot}{integer}(x, start, end, at, maxwidth=1, col="grey",
+\method{shadowplot}{numeric}(x, start, end, at, maxwidth=1, col="grey",
 	border=NA, bty="n", xaxt="n", ylim, xlab="", ylab="classes", ...)
 
 \method{shadowplot}{data.frame}(x=data.frame(), what, by, start, end, at,

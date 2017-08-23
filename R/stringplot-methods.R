@@ -23,8 +23,9 @@ stringplot.default <- function(x, ...)
     cat("The class of 'x' does not match any method for 'stringplot'", "\n")
 
 # the high level function for a single stringplot (low level with at argument)
-stringplot.integer <- function(x, lwd=1, maxwidth=1, col="black", at, bty="n",
+stringplot.numeric <- function(x, lwd=1, maxwidth=1, col="black", at, bty="n",
         xaxt="n", ylim, xlab="", ylab="classes", ...) {
+	if(!is.integer(x)) x <- as.integer(x)
 	if(!missing(at)) {
 		strp(x, lwd, maxwidth, col, at)
 	} else {

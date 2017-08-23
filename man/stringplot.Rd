@@ -2,7 +2,7 @@
 \alias{stringplot}
 \alias{stringplot.default}
 \alias{stringplot.factor}
-\alias{stringplot.integer}
+\alias{stringplot.numeric}
 \alias{stringplot.data.frame}
 \alias{stringplot.formula}
 
@@ -18,7 +18,7 @@ stringplot(x, ...)
 
 \method{stringplot}{default}(x, ...)
 
-\method{stringplot}{integer}(x, lwd=1, maxwidth=1, col="black", at, bty="n",
+\method{stringplot}{numeric}(x, lwd=1, maxwidth=1, col="black", at, bty="n",
 	xaxt="n", ylim, xlab="", ylab="classes", ...)
 
 \method{stringplot}{data.frame}(x=data.frame(), what, by, at, col, lwd=2,
