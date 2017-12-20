@@ -8,6 +8,8 @@ importFrom("stats", "terms")
 
 ## Export regular function names
 export(
+	br,
+	bars,
 	curve_area,
     error_bars,
     gap_id,
@@ -34,3 +36,7 @@ S3method(stringplot, formula)
 
 # S3 methods for SLOSS
 S3method(plot, SLOSS)
+
+# S3 methods for bars
+S3method(bars, default)
+S3method(bars, numeric)

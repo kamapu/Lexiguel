@@ -20,16 +20,16 @@ strp <- function(x, lwd=1, maxwidth=1, col="black", at) {
 stringplot <- function(x, ...) UseMethod("stringplot", x)
 
 stringplot.default <- function(x, ...)
-    cat("The class of 'x' does not match any method for 'stringplot'", "\n")
+	cat("The class of 'x' does not match any method for 'stringplot'", "\n")
 
 # the high level function for a single stringplot (low level with at argument)
 stringplot.numeric <- function(x, lwd=1, maxwidth=1, col="black", at, bty="n",
-        xaxt="n", ylim, xlab="", ylab="classes", ...) {
+		xaxt="n", ylim, xlab="", ylab="classes", ...) {
 	if(!is.integer(x)) x <- as.integer(x)
 	if(!missing(at)) {
 		strp(x, lwd, maxwidth, col, at)
 	} else {
-        at <- 1
+		at <- 1
 		if(missing(ylim)) ylim <- range(as.integer(x))
 		plot(NA, bty=bty, xaxt=xaxt, ylim=ylim, xlab=xlab, ylab=ylab, type="n",
 				...)
@@ -55,16 +55,16 @@ stringplot.data.frame <- function(x=data.frame(), what, by, at, col, lwd=2,
 	what <- split(what, by)
 	if(missing(col)) col <- "black"
 	col <- rep_len(col, length(what))
-    if(missing(at)) {
-        at <- 1:length(what)
-        if(xaxt == "s") xaxt1 <- "n"
-        if(missing(xlim)) xlim <- c(0.5,length(what) + 0.5)
-        plot(NA, xlim=xlim, ylim=ylim, xlab=xlab, ylab=ylab, xaxt=xaxt1,
-                type="n", ...)
-        if(xaxt == "s") axis(1, at=at, labels=names(what))
-    } else at <- at:(at + length(what) - 1)
-    for(i in at) stringplot(x=what[[i]], at=at[i], col=col[i], lwd=lwd,
-                maxwidth=maxwidth)
+	if(missing(at)) {
+		at <- 1:length(what)
+		if(xaxt == "s") xaxt1 <- "n"
+		if(missing(xlim)) xlim <- c(0.5,length(what) + 0.5)
+		plot(NA, xlim=xlim, ylim=ylim, xlab=xlab, ylab=ylab, xaxt=xaxt1,
+				type="n", ...)
+		if(xaxt == "s") axis(1, at=at, labels=names(what))
+	} else at <- at:(at + length(what) - 1)
+	for(i in at) stringplot(x=what[[i]], at=at[i], col=col[i], lwd=lwd,
+				maxwidth=maxwidth)
 }
 
 # method for formula

@@ -1,0 +1,50 @@
+\name{bars}
+\alias{bars}
+\alias{bars.default}
+\alias{bars.numeric}
+\alias{br}
+
+\title{Plotting Bars}
+\description{
+Plotting function alternative to \code{\link{barplot}}.
+}
+\usage{
+br(x, x0=0, at, maxwidth=0.5, vertical=TRUE, ...)
+
+bars(x, ...)
+
+\method{bars}{default}(x, ...)
+
+\method{bars}{numeric}(x, x0=0, at, maxwidth=0.5, vertical=TRUE, ...)
+}
+\arguments{
+\item{x}{Numeric vector with the height of bars.}
+\item{x0}{Numeric vector with the values for the bottom of the bars.}
+\item{at}{Numeric vector with the position of bars.}
+\item{maxwidth}{Width of bars in plot units.}
+\item{vertical}{Logical value indicating whether the bars should be drawn
+	vertically (\code{TRUE}, the default) or horizontally (\code{FALSE}).}
+\item{...}{Further arguments passed to \code{\link{polygon}}.}
+}
+\details{
+This function is using \code{\link{polygon}} to plot bars in an existing plot
+device.
+Note that this function is working as a low level plotting function, thus at
+least an empty plot should be drawn in advance.
+}
+\author{
+Miguel Alvarez (\email{kamapu78@gmail.com}).
+}
+\examples{
+library(Lexiguel)
+data(iris)
+
+## Mean value of petal length by species
+iris <- aggregate(Petal.Length ~ Species, iris, mean)
+
+## Plotting steps
+plot(NA, xlim=c(0.5,3.5), ylim=c(0, max(iris$Petal.Length)), xaxt="n",
+	xlab="Species", ylab="petal length (cm)", type="n")
+axis(side=1, at=c(1:3), labels=iris$Species)
+bars(iris$Petal.Length, at=1, col="grey")
+}
