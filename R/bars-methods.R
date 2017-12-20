@@ -30,5 +30,5 @@ bars.numeric <- function(x, x0=0, at, maxwidth=0.5, vertical=TRUE, ...) {
 	if(length(at) == 1 & length(x) > 1)
 		at <- c(at:(at + length(x) - 1))
 	for(i in 1:length(x))
-		br(x[i], x0[i], at[i], ...)
+		br(x[i], x0[i], at[i], maxwidth, vertical, ...)
 }
