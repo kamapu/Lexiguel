@@ -12,6 +12,7 @@ export(
 	bars,
 	curve_area,
     error_bars,
+    fill_nas,
     gap_id,
     gap_fill,
     get_ring,
