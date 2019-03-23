@@ -1,19 +1,13 @@
 Package: Lexiguel
 Version: 0.0.0.9014
-Date: 2018-05-02
 Title: Miscellaneous Functions
-Authors@R: person("Miguel", "Alvarez", email="malvarez@uni-bonn.de",
-    role=c("aut","cre"))
+Authors@R: person("Miguel", "Alvarez", email="malvarez@uni-bonn.de", role=c("aut","cre"))
 Author: Miguel Alvarez [aut, cre]
 Maintainer: Miguel Alvarez <malvarez@uni-bonn.de>
 Depends: R(>= 3.2.0)
-Imports:
-	methods
-Suggests:
-    devtools,
-    raster
-Description: A mingle-mangle of functions for R, most of them related to
-    publications by the maintainer.
+Imports: methods
+Suggests: devtools
+Description: A mingle-mangle of functions for R, most of them related to publications by the maintainer.
 License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true

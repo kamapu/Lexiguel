@@ -15,7 +15,6 @@ export(
     fill_nas,
     gap_id,
     gap_fill,
-    get_ring,
     shadows,
     shadowplot,
     sloss,
