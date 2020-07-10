@@ -1,20 +1,20 @@
-#' Prepare inputs for sankeyNetwork()
+#' @name tab4net
 #' 
+#' @title Prepare inputs for sankeyNetwork()
+#' 
+#' @description 
 #' This function generates lists from column-oriented tables (data frames) for
-#' Sankey Networks diagrams produced by
-#' \code{\link[networkD3:sankeyNetwork]{networkD3::sankeyNetwork()}}.
+#' Sankey Networks diagrams produced by [networkD3::sankeyNetwork()].
 #' 
-#' 
-#' @param formula A formula passed to
-#' \code{\link[stats:aggregate]{stats::aggregate()}}.
+#' @param formula A formula passed to [stats::aggregate()]. On the right side
+#'     the factors are sorted from the first source to the last target.
 #' @param data A data frame with the variables included in 'formula'.
-#' @param FUN A function passed to
-#' \code{\link[stats:aggregate]{stats::aggregate()}}.
-#' @param ... Further arguments passed to
-#' \code{\link[stats:aggregate]{stats::aggregate()}}.
-#' @return A list with two data frames called 'nodes' and 'links'.
-#' @examples
+#' @param FUN A function passed to [stats::aggregate()].
+#' @param ... Further arguments passed to [stats::aggregate()].
 #' 
+#' @return A list with two data frames called 'nodes' and 'links'.
+#' 
+#' @examples
 #' require(networkD3)
 #' 
 #' ## Different values of WET-Health scores for vegetation per land use

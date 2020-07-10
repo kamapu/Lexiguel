@@ -7,27 +7,23 @@
 tab4net(formula, data, FUN, ...)
 }
 \arguments{
-\item{formula}{A formula passed to
-\code{\link[stats:aggregate]{stats::aggregate()}}.}
+\item{formula}{A formula passed to \code{\link[stats:aggregate]{stats::aggregate()}}. On the right side
+the factors are sorted from the first source to the last target.}
 
 \item{data}{A data frame with the variables included in 'formula'.}
 
-\item{FUN}{A function passed to
-\code{\link[stats:aggregate]{stats::aggregate()}}.}
+\item{FUN}{A function passed to \code{\link[stats:aggregate]{stats::aggregate()}}.}
 
-\item{...}{Further arguments passed to
-\code{\link[stats:aggregate]{stats::aggregate()}}.}
+\item{...}{Further arguments passed to \code{\link[stats:aggregate]{stats::aggregate()}}.}
 }
 \value{
 A list with two data frames called 'nodes' and 'links'.
 }
 \description{
 This function generates lists from column-oriented tables (data frames) for
-Sankey Networks diagrams produced by
-\code{\link[networkD3:sankeyNetwork]{networkD3::sankeyNetwork()}}.
+Sankey Networks diagrams produced by \code{\link[networkD3:sankeyNetwork]{networkD3::sankeyNetwork()}}.
 }
 \examples{
-
 require(networkD3)
 
 ## Different values of WET-Health scores for vegetation per land use
