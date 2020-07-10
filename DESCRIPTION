@@ -1,15 +1,19 @@
 Package: Lexiguel
-Version: 0.0.0.9014
+Version: 0.1.0
 Title: Miscellaneous Functions
-Authors@R: person("Miguel", "Alvarez", email="malvarez@uni-bonn.de", role=c("aut","cre"))
-Author: Miguel Alvarez [aut, cre]
+Authors@R: c(person("Miguel", "Alvarez", email="malvarez@uni-bonn.de",
+        role=c("aut","cre")))
 Maintainer: Miguel Alvarez <malvarez@uni-bonn.de>
 Depends: R(>= 3.2.0)
 Imports: methods
-Suggests: devtools
+Suggests:
+    devtools,
+    networkD3
 Description: A mingle-mangle of functions for R, most of them related to publications by the maintainer.
 License: GPL (>= 2)
+Roxygen: list(markdown = TRUE)
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/kamapu/Lexiguel
 BugReports: https://github.com/kamapu/Lexiguel/issues
+RoxygenNote: 7.1.0
