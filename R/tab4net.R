@@ -42,9 +42,9 @@ tab4net <- function(formula, data, FUN, ...) {
 	Nodes <- list()
 	Links <- list()
 	for(i in 1:(length(Vars) - 2)) {
-		Links[[i]] <- with(data, aggregate(as.formula(paste(Vars[1], "~",
-										Vars[i + 1], "+", Vars[i + 2])),
-						FUN=FUN, ...))
+		Links[[i]] <- aggregate(formula = as.formula(paste(Vars[1], "~",
+								Vars[i + 1], "+", Vars[i + 2])), data = data,
+				FUN = FUN, ...)
 		colnames(Links[[i]]) <- c("source", "target", "value")
 		Nodes[[i]] <- data.frame(name=c(Links[[i]]$source, Links[[i]]$target),
 				stringsAsFactors=FALSE)
