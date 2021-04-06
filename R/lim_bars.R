@@ -38,7 +38,8 @@ lim_bars <- function(x, y, breaks = 10, pos = NULL, horiz = FALSE,
 	}
 	breaks <- seq(from = min(x), to = max(x), length.out = breaks + 1)
 	x_class <- cut(x, breaks, labels = FALSE, include.lowest = TRUE)
-	trend <- sapply(split(y, x_class), pos)
+	if(!is.null(pos))
+		trend <- sapply(split(y, x_class), pos)
 	if(horiz) {
 		plot(x = y, y = x, type = "n", ...)
 		for(i in 1:(length(breaks) - 1)) {
