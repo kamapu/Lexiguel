@@ -5,11 +5,11 @@
 
 # Needed packages
 library(devtools)
-library(covr)
-library(goodpractice)
-library(rmarkdown)
-library(knitr)
-library(pkgdown)
+## library(covr)
+## library(goodpractice)
+## library(rmarkdown)
+## library(knitr)
+## library(pkgdown)
 
 # Document package
 document()
@@ -30,11 +30,11 @@ document()
 ## gp()
 
 # Build package
-pkg_loc <- build(path="build")
+pkg_loc <- build(path = "build")
 
 # Test the package
-Sys.setenv(LANG="en_US.iso88591")
-check_built(path=pkg_loc)
+## Sys.setenv(LANG="en_US.iso88591")
+check_built(path = pkg_loc)
 
 # After check ------------------------------------------------------------------
 
