@@ -53,9 +53,11 @@ Growth <- aggregate(weight ~ group, PlantGrowth, mean)
 Growth$sd <- aggregate(weight ~ group, PlantGrowth, sd)$weight
 
 ## Error bars overlaid to boxplots
-boxplot(weight ~ group, data=PlantGrowth, border="grey", main="Error Bars")
-with(Growth,
-	error_bars(tendency=weight, upper=sd, pch=21, bg="red", lwd=2, cex=1.5))
+boxplot(weight ~ group, data = PlantGrowth, border = "grey", main = "Error Bars")
+with(
+  Growth,
+  error_bars(tendency = weight, upper = sd, pch = 21, bg = "red", lwd = 2, cex = 1.5)
+)
 
 }
 \author{

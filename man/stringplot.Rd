@@ -101,19 +101,21 @@ categorical and ordinal data and should be interpreted as an histogram.
 data(WHscores)
 
 ## Hydrology scores per land use
-stringplot(WET_hydro ~ Landuse, data=WHscores, xlab="Land uses",
-	   ylab="WET-health scores", main="Hydrology module", lwd=3)
+stringplot(WET_hydro ~ Landuse,
+  data = WHscores, xlab = "Land uses",
+  ylab = "WET-health scores", main = "Hydrology module", lwd = 3
+)
 
 ## Adding tendencies
 Tendency <- aggregate(WET_hydro ~ Landuse, WHscores, median)
 with(Tendency, {
-    lines(1:4, WET_hydro, lty=2)
-    points(1:4, WET_hydro, pch=21, bg="white", cex=1.5)
+  lines(1:4, WET_hydro, lty = 2)
+  points(1:4, WET_hydro, pch = 21, bg = "white", cex = 1.5)
 })
 
 #' ## Strings overlaid to box and whisker plot (note the bimodal distribution)
-boxplot(WHscores$WET_veg, border="grey", col="palegreen")
-strp(WHscores$WET_veg, lwd=4, at=1)
+boxplot(WHscores$WET_veg, border = "grey", col = "palegreen")
+strp(WHscores$WET_veg, lwd = 4, at = 1)
 
 }
 \references{
@@ -128,7 +130,5 @@ A rapid assessment of anthropogenic disturbances in East African wetlands.
 \code{\link[=stringplot]{stringplot()}}, \code{\link[=error_bars]{error_bars()}}.
 }
 \author{
-Miguel Alvarez (\email{malvarez@uni-bonn.de}).
-
 Miguel Alvarez (\email{malvarez@uni-bonn.de}).
 }

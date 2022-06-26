@@ -74,7 +74,7 @@ data(rc_gaps.env)
 rc_curves <- sloss(rc_gaps, rc_gaps.env, area)
 
 ## Plot the curves
-plot(rc_curves, show.legend=TRUE)
+plot(rc_curves, show.legend = TRUE)
 
 }
 \references{

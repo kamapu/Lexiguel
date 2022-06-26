@@ -115,16 +115,20 @@ data(WHscores)
 
 ## Shadow overlaid to box and whisker plot using transparent color
 ## (note the bimodal distribution)
-boxplot(WHscores$WET_veg, col="grey")
-shadows(WHscores$WET_veg, col=rgb(153/255, 255/255, 153/255, alpha=0.5),
-    at=1)
+boxplot(WHscores$WET_veg, col = "grey")
+shadows(WHscores$WET_veg,
+  col = rgb(153 / 255, 255 / 255, 153 / 255, alpha = 0.5),
+  at = 1
+)
 
 ## Plot using formula
-shadowplot(WET_veg ~ Landuse, WHscores, start=0, end=10,
-        col=c("orangered", "palegreen", "orange", "lightblue"))
+shadowplot(WET_veg ~ Landuse, WHscores,
+  start = 0, end = 10,
+  col = c("orangered", "palegreen", "orange", "lightblue")
+)
 
 ## Adding a stringplot
-stringplot(WET_veg ~ Landuse, WHscores, lwd=3, at=1)
+stringplot(WET_veg ~ Landuse, WHscores, lwd = 3, at = 1)
 
 }
 \author{

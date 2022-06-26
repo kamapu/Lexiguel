@@ -29,8 +29,10 @@ require(networkD3)
 ## Different values of WET-Health scores for vegetation per land use
 veg_wh <- tab4net(UseunitID ~ Landuse + WET_veg, WHscores, length)
 
-sankeyNetwork(Links=veg_wh$links, Nodes=veg_wh$nodes, Source = 'source',
-    Target = 'target', Value = 'value', NodeID = 'name',
-    units = 'TWh', fontSize = 12, nodeWidth = 30)
+sankeyNetwork(
+  Links = veg_wh$links, Nodes = veg_wh$nodes, Source = "source",
+  Target = "target", Value = "value", NodeID = "name",
+  units = "TWh", fontSize = 12, nodeWidth = 30
+)
 
 }

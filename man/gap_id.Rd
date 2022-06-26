@@ -43,9 +43,9 @@ B
 ## Linear interpolation in gaps
 A_filled <- gap_fill(A, B)
 
-par(mfrow=c(2,1))
-plot(1:length(A), A, type="l")
-plot(1:length(A_filled), A_filled, type="l")
+par(mfrow = c(2, 1))
+plot(1:length(A), A, type = "l")
+plot(1:length(A_filled), A_filled, type = "l")
 
 }
 \author{

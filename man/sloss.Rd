@@ -74,7 +74,7 @@ data(rc_gaps.env)
 rc_curves <- sloss(rc_gaps, rc_gaps.env, area)
 
 ## Plot the curves
-plot(rc_curves, show.legend=TRUE)
+plot(rc_curves, show.legend = TRUE)
 
 ## Calculation of curves
 rc_curves <- sloss(rc_gaps, rc_gaps.env, area)
@@ -83,8 +83,10 @@ rc_curves <- sloss(rc_gaps, rc_gaps.env, area)
 rc_curves$Index
 
 ## Cross-check
-with(rc_curves$SL, curve_area(area, species))/with(rc_curves$LS,
-	curve_area(area, species))
+with(rc_curves$SL, curve_area(area, species)) / with(
+  rc_curves$LS,
+  curve_area(area, species)
+)
 
 }
 \references{

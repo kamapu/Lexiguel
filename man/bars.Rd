@@ -43,10 +43,12 @@ data(iris)
 iris <- aggregate(Petal.Length ~ Species, iris, mean)
 
 ## Plotting steps
-plot(NA, xlim=c(0.5,3.5), ylim=c(0, max(iris$Petal.Length)), xaxt="n",
-	xlab="Species", ylab="petal length (cm)", type="n")
-axis(side=1, at=c(1:3), labels=iris$Species)
-bars(iris$Petal.Length, at=1, col="grey")
+plot(NA,
+  xlim = c(0.5, 3.5), ylim = c(0, max(iris$Petal.Length)), xaxt = "n",
+  xlab = "Species", ylab = "petal length (cm)", type = "n"
+)
+axis(side = 1, at = c(1:3), labels = iris$Species)
+bars(iris$Petal.Length, at = 1, col = "grey")
 
 }
 \author{
