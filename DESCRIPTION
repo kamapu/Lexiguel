@@ -5,7 +5,9 @@ Authors@R: c(person("Miguel", "Alvarez", email="malvarez@uni-bonn.de",
         role=c("aut","cre")))
 Maintainer: Miguel Alvarez <malvarez@uni-bonn.de>
 Depends: R(>= 3.2.0)
-Imports: methods
+Imports:
+    graphics,
+    stats
 Suggests:
     devtools,
     networkD3
@@ -16,4 +18,4 @@ Encoding: UTF-8
 LazyData: true
 URL: https://github.com/kamapu/Lexiguel
 BugReports: https://github.com/kamapu/Lexiguel/issues
-RoxygenNote: 7.2.0
+RoxygenNote: 7.2.1
