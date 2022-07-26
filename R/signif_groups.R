@@ -1,4 +1,4 @@
-#' @name get_s_groups
+#' @name signif_groups
 #'
 #' @title Retrieve significant groups after pairwise post-hoc tests
 #'
@@ -14,17 +14,20 @@
 #'   contrasted groups. Note that the values in these columns need to match 'g'.
 #' @param criterion An expression (symbol) used to define groups belonging to
 #'   the same significant group, for instance a cut level for a p-value.
+#' @param decreasing Logical value, whether the sorting of mean values should be
+#'   done from the highest to the lowest or vice versa. This argument is passed
+#'   to [order()].
 #'
 #' @return
 #' A data frame with the names of the groups and their respective significant
 #' groups.
 #'
 #' @export
-get_s_groups <- function(g, m, t_tab, criterion) {
+signif_groups <- function(g, m, t_tab, criterion, decreasing = TRUE) {
   if (length(g) != length(m)) {
     stop("Argument 'g' have to be of the same length as argument 'm'")
   }
-  g <- g[order(m, decreasing = TRUE)]
+  g <- g[order(m, decreasing = decreasing)]
   idx <- 1:length(g)
   if (!all(c("group1", "group2") %in% names(t_tab))) {
     stop("Columns 'group1' and 'group2' are mandatory in 't_tab'")
@@ -40,7 +43,7 @@ get_s_groups <- function(g, m, t_tab, criterion) {
   i <- 0
   repeat {
     i <- i + 1
-    aux_gr <- with(t_tab, unique(idx1[min(idx1)]))
+    aux_gr <- with(t_tab, unique(idx1[idx1 == min(idx1)]))
     aux_tab <- t_tab[t_tab$idx1 == aux_gr, ]
     sig_gr[[i]] <- c(aux_gr, aux_tab$idx2[eval(
       criterion,
