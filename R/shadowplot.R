@@ -113,13 +113,14 @@ shadows <- function(x, start, end, at, maxwidth = 1, col = "grey",
   }
   # Now one polygon per element in the list
   for (i in 1:length(shadows)) {
-    polygon(c(
-      shadows[[i]]$freq * maxwidth / 2 + at,
-      at - rev(shadows[[i]]$freq) * maxwidth / 2
-    ),
-    c(shadows[[i]]$class, rev(shadows[[i]]$class)),
-    col = col,
-    border = border, ...
+    polygon(
+      c(
+        shadows[[i]]$freq * maxwidth / 2 + at,
+        at - rev(shadows[[i]]$freq) * maxwidth / 2
+      ),
+      c(shadows[[i]]$class, rev(shadows[[i]]$class)),
+      col = col,
+      border = border, ...
     )
   }
 }
